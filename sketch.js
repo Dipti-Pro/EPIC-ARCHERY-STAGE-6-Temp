@@ -181,8 +181,7 @@ function handlePlayerArrowCollision() {
       archerCollision.collided ||
       computerCollision.collided
     ) {
-      computerArcherLife -= 1;
-      computer.reduceLife(computerArcherLife);
+      
       if (computerArcherLife <= 0) {
         computerArcher.collapse = true;
         Matter.Body.setStatic(computerArcher.body, false);
